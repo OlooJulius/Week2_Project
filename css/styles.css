@@ -2,20 +2,24 @@ body{
     padding: o;
     margin: o;
     font-family: 'Times New Roman', Times, serif;
-    background: tan;
+    height: 100%;
+    
+    
 }
 
 /* the nav bar */
 
 nav .topnav {
+    
     overflow: hidden;
     background-color: #333;
+    width: 100%;
   }
 
   
   /* ul */
   
-  nav ul #navTopbar a {
+  nav .topnav #navTopbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -25,25 +29,47 @@ nav .topnav {
     font-size: 17px;
   }
   
-  ul #navTopbar a:hover {
+  .topnav #navTopbar a:hover {
     background-color: #ddd;
     color: black;
   }
   
-   ul #navTopbar a.active {
-    background-color: #4CAF50;
+   .topnav #navTopbar a.active {
+    background-color: rgb(63, 45, 6);
     color: white;
   }
+  /* jumbotron */
+  
+  .jumbotron{
+    text-align: center;
+  }
+  
+  /* about section
+   */
+
+  .row{
+    text-align: center;
+    font-size: large;
+  }
+
   
 
+  /* table section */
 
+  .row #col-md-6{
+    padding-top: 30px;
+  }
 
+/* footer */
 
-
-
-
-
-
+.footer{
+  padding: 0px;
+  margin-top: 20px;
+  color: #ec7070;
+  background-color: #bdb2af;
+  text-align: center;
+  width: 100%;
+}
   
   /* Media query */
   @media screen and (max-width: 760px) {

@@ -1,6 +1,6 @@
 // Declaring variable name ordered from Sunday
 
-const maleAkanNames = [
+const maleNames = [
     "Kwame",
     "Kwasi",
     "Kwadwo",
@@ -9,7 +9,7 @@ const maleAkanNames = [
     "Yaw",
     "Kofi"
   ];
-  const femaleAkanNames = [
+  const femNames = [
     "Ama",
     "Akosua",
     "Adwoa",
@@ -19,7 +19,7 @@ const maleAkanNames = [
     "Afua"
   ];
   // function collects the data from input fields
-function fetchFormData() {
+function getFormData() {
     let form = document.forms[0];
     let day, month, year, gender;
   
@@ -44,7 +44,7 @@ function fetchFormData() {
       yearOfBirth -= 1;
     }
             
-    // Split year to centuryCode & yearCode
+    // Split the array year into year code and century c
     zeroBasedCentury = parseInt(yearOfBirth / 100);
     yearOfCentury = yearOfBirth % 100;
   
@@ -59,27 +59,28 @@ function fetchFormData() {
         )) %
       7;
   
-    // return dayOfWeek as a zero-based index
+    // return dayOfWeek 
     // dayOfWeek = (0 = Saturday, 1 = Sunday, 2 = Monday, ..., 6 = Friday)
     return dayOfWeek;
   }
   
   /**
-   * Initialize deriveAkanName function.
-   * The function calls the calcWeekDay function and derives the user gender
-   * from the Akan Name arrays defined at the top
+   * Initialize AkanName function.
+   * The function calls the calcWeekDay function 
+   * derives the user gender
+   * from the Akan Nam defined at the top
    */
   function AkanName() {
-    let formData = fetchFormData();
+    let formData = getFormData();
     let userBirthDate, userGender, dayOfWeek;
   
     [userGender, ...userBirthDate] = formData;
     dayOfWeek = calWeekDay(userBirthDate);
   
     if (userGender === "Male") {
-      alert("Your Akan Name is: " + maleAkanNames[dayOfWeek]);
+      alert("Your Akan Name is: " + maleNames[dayOfWeek]);
     } else {
-      alert("Your Akan Name is: " + femaleAkanNames[dayOfWeek]);
+      alert("Your Akan Name is: " + femNames[dayOfWeek]);
     }
     // clear the input fields 
     return false;
