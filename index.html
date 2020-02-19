@@ -130,17 +130,17 @@
                        class="form-control"
                        type="number"
                        min="1920"
-                       max="2019"
+                       max="2020"
                        name="year"
                        placeholder="Year"
                        required
                             />
-                        <select class="form-control" id="gender" name="gender">
-                         <option disabled selected>Gender</option>
-                          <option>Male</option>
-                          <option>Female</option>
-                         </select>
-                     <button class="btn btn-block btn-outline-dark" type="submit">
+                            <div id="gender">
+                              <input type="radio" name="gender" id="gender" value="male" checked=""> Male<br>
+                              <input type="radio" name="gender" value="female">Female<br>
+                          </div>
+                       
+                     <button class="botton_1" type="submit">
                          Submit
                 </button>
               </form>
