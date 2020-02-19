@@ -50,9 +50,9 @@
 
 <!--project section  1-->
 
-    <section id="table-names">
+    <section id="main">
         <div class="container">
-            <div class="col-md-8">
+            <article id="main-col">
                 <table class="table table-striped">
                   <caption>
                     <em>List of male and female Akan names.</em>
@@ -102,7 +102,49 @@
                     </tr>
                   </tbody>
                 </table>
-              </div>
+            </article>
+
+
+<!--part 2 filling the form-->
+             <aside id="sidebar">
+                  <form action="#" onsubmit="deriveAkanName()">
+                      <input
+                      class="form-control"
+                      type="number"
+                      min="1"
+                      max="31"
+                      name="day"
+                      placeholder="Day"
+                      required
+                        />
+                        <input
+                       class="form-control"
+                       type="number"
+                       min="1"
+                       max="12"
+                       name="month"
+                       placeholder="Month"
+                       required
+                          />
+                       <input
+                       class="form-control"
+                       type="number"
+                       min="1920"
+                       max="2019"
+                       name="year"
+                       placeholder="Year"
+                       required
+                            />
+                        <select class="form-control" id="gender" name="gender">
+                         <option disabled selected>Gender</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                         </select>
+                     <button class="btn btn-block btn-outline-dark" type="submit">
+                         Submit
+                </button>
+              </form>
+            </aside>
         </div>
     </section>
 
