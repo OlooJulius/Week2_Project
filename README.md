@@ -6,7 +6,7 @@ AKAN NAME GENERATOR
 
 Akan name generator is a simple application that outputs name of a person given their date and year of birth .Akan is a Ghanaian cultural naming rite by which children born are named in accordance to sex and day of birth they are born. It takes users input in a form ,calculate day of week from a specific date,splits the year into century and year code and returns the names of person.
 
-# Auothor
+# Author
 
 OLERO JULIUS OLOO
  student @ moringa-school
